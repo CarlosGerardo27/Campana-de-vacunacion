@@ -1,0 +1,471 @@
+/* Generales */
+
+.wrapper{
+    max-width: 1356PX;
+    margin: 0 auto;
+}
+
+.paragraph{
+    width: 80%;
+    color: #6D7B93;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.maxwidth--600{
+    max-width: 600px;
+}
+
+.maxwidth--300{
+    max-width: 600px;
+}
+
+
+.title-2{
+    font-size: 45px;
+    color: #1F3E72;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 30px 0 40px 0 ;
+}   
+
+
+/* Botones */
+
+.button--main{
+    border: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    background-color: hsl(228, 65%, 48%);
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 3px 4px 10px #A8B8E9;
+    transition: 200ms;
+}
+
+.button--main:hover{
+    background-color: #FFD012;
+    color: #1F3E72;
+}
+
+.button--second{
+    justify-self: center;
+    width: 180px;
+    border: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    background-color: hsl(228, 65%, 48%);
+    padding: 20px 10px;
+    border-radius: 8px;
+    box-shadow: 3px 4px 10px #A8B8E9;
+    transition: 200ms;
+}
+
+.button--second:hover{
+    background-color: #FFD012;
+    color: #1F3E72;
+}
+
+
+/* Navbar */
+.navbar{
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+    background-color: white ;
+    opacity: .9;
+}
+
+.navbar__logo-container{
+    width: 35%;
+    display: flex;
+    justify-content: left;
+
+}
+.navbar__logo{
+    width: 170px;
+}
+.navbar__menu{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-right: 50px;
+}
+.navbar__element{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #6D7B93;
+    cursor: pointer;
+    align-self: center;
+    transition: 300ms;
+}
+
+.navbar__element:hover{
+    color: #FFD012;
+}
+
+
+/* Hero section */
+.hero{
+    display: flex;
+    position: relative;
+}
+
+.hero__left{
+    width: 50%;
+}
+
+.hero__title{
+    width: 90%;
+    font-size: 60px;
+    color: #1F3E72;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 30px 0 20px 0 ;
+}
+
+
+.hero__right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero__image{
+    position: relative;
+    z-index: 2;
+    top: -104px;
+
+}
+
+/* Detalles de vacunación */
+
+.vacunation-details__container{
+    width: 70%;
+    position: absolute;
+    z-index: 3;
+    background-color: white;
+    opacity: .9;
+    padding: 25px 25px 25px 0;
+    bottom: 14% ;
+    left: 60px;
+    border-radius: 5px;
+/*     box-shadow: #E7EEF9 0px 1px 40px ; */
+    box-shadow: rgba(186, 198, 204, 0.5) 30px 20px 30px, 30px 20px 40px rgba(186, 198, 204, 0.5);
+/*     box-shadow: 5px 5px 60px rgba(212, 236, 247, 0.9); */
+    display: flex;
+}
+
+
+.vacunation-details__row{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-self: flex-start;
+}
+
+.vacunation-details__box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.icon__title--detail{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+    color: #6D7B93;
+    margin-left: 10px;
+}
+
+.icon__title--vacunation{
+    font-size: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    color: #1F3E72;
+    margin: 20px 10px 20px 50px;
+    justify-self: flex-end;
+}
+
+/* Iconos */
+
+.icon__container{
+    margin-top: 60px;
+    display: flex;
+}
+
+.icon__box{
+    display: flex;
+    align-items: center;
+    background-color: #FFFAE8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin-right: 5px;
+}
+
+.icon__box--blue{
+    display: flex;
+    align-items: center;
+    background-color: #DDE5FF;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin-right: 5px;
+}
+
+.icon{
+    width: 16px;
+}
+
+.icon__title{
+    font-family: 'Noto Sans', sans-serif;
+    align-self: center;
+    color: #1F3E72;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-left: 10px
+}
+
+.icon__title--bigger{
+    font-family: 'Noto Sans', sans-serif;
+    align-self: center;
+    color: #1F3E72;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 10px
+}
+
+
+/* pharma logos */
+
+.pharma__container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.pharma__logo{
+    width: 16%;
+    opacity: .8;
+}
+
+.pharma__logo--opacity{
+    width: 16%;
+    opacity: .9;
+}
+
+
+/* Benefits */
+
+
+.benefits__container{
+    margin-top: 150px;
+}
+
+.benefit__row{
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.benefit__box{
+    padding: 10px;
+    width: 300px;
+    transition: 400ms;
+    
+}
+
+.benefit__box:hover{
+    transform: scale(1.1);
+    box-shadow:  5px 20px 40px rgba(205, 222, 231, 0.5);
+}
+
+
+
+
+.icon__box--big{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #DDE5FF;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.icon--big{
+    widows: 36px;
+}
+
+.benefit-icon--detail{
+    margin-top: 30px;
+    color: #1F3E72;
+    font-size: 22px;
+    line-height: 28px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+}
+
+
+.benefit__paragraph{
+    margin-top: 15px;
+    width: 80%;
+    color: #6D7B93;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+/* Preparation for the Vaccine */
+
+.preparation__container{
+    margin-top:120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.preparation__column-right{
+    width: 50%;;
+}
+
+.preparation__img{
+    width: 100%;
+}
+
+
+.preparation__column-left{
+    width: 45%;
+}
+
+/* Collapse module for benefits */
+
+.colapse__container{
+    margin-top: 70px;
+}
+
+
+
+.colapse-element___heading{
+    display: flex;
+    margin: 20px 30px;
+    max-width: 450px;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+
+
+.colapse-element___heading:hover{
+    background-color: #DDE5FF ;
+}
+
+.heading__container{
+    display: flex;
+    align-items: center;
+}
+
+.colapse-element__text{
+    color: #1F3E72;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+}
+
+.colapse__box-icon{
+    margin-right: 20px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    background-color: #DDE5FF;
+    justify-content: center;
+
+    border-radius: 5px;
+}
+
+.colapse__icon{
+    width: 18px;
+}
+
+.colapse__box-icon--toggle-down{
+    margin-right: 20px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    background-color: #DDE5FF;
+    border-radius: 5px;
+}
+
+.collapsible__container{
+    display: none;
+}
+
+.colapse__text{
+    margin-left: 75px;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'Noto Sans', sans-serif;
+    max-width: 400px;
+    color: #6D7B93;
+    box-shadow: 4px 5px 10px  -5px #d1d8ec;
+}
+
+
+
+/* Emergency Contact section*/
+
+.emergencys__container{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact__column2{
+    display: flex;
+    width: 45%;
+}
+
+.contact__img{
+    width: 100%;
+}
+
+
+
+
+
+/* Margins & Padings */
+.margin-left{
+    margin-left: 10px;
+}
+
+.margin-top{
+    margin-top: 230px;
+}
+
+/* Javascript */
+

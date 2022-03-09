@@ -3,6 +3,7 @@
 .wrapper{
     max-width: 1356PX;
     margin: 0 auto;
+    display: relative;
 }
 
 .paragraph{
@@ -155,6 +156,7 @@
 
 .hero__left{
     width: 50%;
+    position: relative;
 }
 
 .hero__title{
@@ -292,10 +294,15 @@
     width: 90%;
     margin: 0 auto;
     margin-bottom: 60px;
+    align-items: center;
 }
 .pharma__logo{
     width: 16%;
     opacity: .8;
+}
+
+.sinovac{
+    height: 40px;
 }
 
 .pharma__logo--opacity{
@@ -561,6 +568,7 @@ footer{
     display: flex;
     padding: 50px 50px 30px 50px;
     justify-content: space-around;
+    position: relative;
 }
 
 
@@ -590,6 +598,8 @@ footer img{
 
 .footer__column-right{
     width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -613,6 +623,230 @@ footer img{
 }
 .terminos{
     margin-top: 70px;
+    position: relative;
+    align-self: flex-end;
+    z-index: 2;
 }
+
+
+/* Floating Elments */
+.hero__triangle{    
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 80px solid #F4F6FB;
+    z-index: -1;
+}
+
+.hero__triangle2{    
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 150px solid transparent;
+    border-right: 120px solid #F4F6FB;
+    border-bottom: 150px solid transparent;
+    z-index: -1;
+    bottom: 15%;
+    left: 45%;
+}
+
+.hero__triangle3{    
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 150px solid transparent;
+    border-right: 120px solid #F4F6FB;
+    border-bottom: 150px solid transparent;
+    top:155%;
+    left: 86%;
+}
+
+.hero__triangle4{    
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 150px solid transparent;
+    border-left: 120px solid #F4F6FB;
+    border-bottom: 150px solid transparent;
+    top:250%;
+    z-index: -1
+}
+
+.hero__triangle5{    
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 150px solid transparent;
+    border-right: 120px solid #F4F6FB;
+    border-bottom: 150px solid transparent;
+    top:400%;
+    left: 86%;
+}
+
+.hero__triangle6{    
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 130px solid transparent;
+    border-right: 130px solid transparent;
+    border-bottom: 100px solid #E2E9F9;
+    top: 68%;
+    right: 15%;
+}
+
+
+/* Estilos en mobile */
+
+  @media (max-width: 1178px) {
+    section{
+        padding: 30px;
+    }
+    .mobile__hide2{
+        display: none;
+    }
+    .hero__triangle2{
+        display: flex;
+        align-self: flex-end;
+        z-index: 5;
+        z-index: -1;
+    }
+    .hero__left{
+        width: 90%;
+    }
+    .margin-top{
+        margin-top: 0;
+    }
+
+    .preparation__column-right{
+        width: 100%;
+    }
+    .emergency__column{
+        width: 100%;
+    }
+    .contacts__container{
+        width: 70%;
+    }
+  }
+
+
+  @media (max-width: 1002px) {
+    .vacunation-details__container{
+        width: 85%;
+        bottom: 0%;
+        flex-direction: column;
+    }
+
+    .vacunation-details__box{
+        margin-bottom: 30px;
+    }
+
+    .button--second{
+        width: 80%;
+    }
+
+    .maxwidth--600{
+        width: 95%;
+    }
+
+    .pharma__container{
+        margin-top: 100px;
+    }
+
+    .hero__left{
+        min-height: 930px;
+    }
+    .icon__container{
+        margin-top: 50px;
+    }
+    .emergencys__container{
+        margin-top: 40px;
+    }
+    .contact__row{
+        margin-bottom: 0px;
+    }
+    .preparation__container{
+        margin-top: 20px;
+    }
+  }
+
+
+  @media (max-width: 850px) {
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    .hero{
+        justify-content: center;
+    } 
+    .hero__left{
+        min-height: 1000px;
+    }
+    .vacunation-details__container{
+        width: 60%;
+        align-items: center;
+    }
+    .benefits__container{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .benefit__row{
+        flex-direction: column;
+        margin-bottom: 20px;
+        align-items: center;
+
+    }
+    .benefit__box{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .preparation__container{
+        margin-top: 0px;
+    }
+
+    .button--second{
+        width: 100%;
+    }
+    .sinovac{
+        width: 200px;
+        margin-bottom: 30px;
+    }
+    .pharma__container {
+        margin-top: 40px;
+    }
+    .pharma__logo{
+        width: 200px;
+        margin-bottom: 70px;
+    }
+    .pharma__container{
+        flex-direction: column;
+    }
+    .pharma__logo{
+        margin-bottom: 60px;
+    }
+    .sinovac{
+        margin-bottom: 60px;
+    }
+    .preparation__column-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .emergencys__container{
+        margin-top: 30px;
+    }
+    .contact__row{
+        margin-bottom: 0px;
+    }
+  }
+  }
+
+  @media (max-width: 600px) {
+
+  }
 
 

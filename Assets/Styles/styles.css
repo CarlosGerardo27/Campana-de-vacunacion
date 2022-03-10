@@ -159,7 +159,6 @@
     justify-content: space-evenly;
     position: sticky;
     padding-top: 30px;
-    padding-bottom: 20px ;
     top: 60px;
     align-items: center;
     background-color: white;
@@ -778,6 +777,9 @@ footer img{
 
 
   @media (max-width: 1002px) {
+    .wrapper{
+        max-width: 1000px;
+    }
     .navbar--mb{
         display: flex;
     }
@@ -785,8 +787,10 @@ footer img{
     #closeMenu{
         display: flex;
         position: absolute  ;
+        right: 40px;
         align-self: flex-end;
-        padding: 10 20px;
+        padding: 10px 20px;
+        cursor: pointer;
 
     }
     .hero{
@@ -913,7 +917,18 @@ footer img{
   }
 
   @media (max-width: 600px) {
-
+    .maxwidth--600{
+        max-width: 500px;
+    }
+    .wrapper{
+        max-width: 600px;
+    }
+    .hero__left{
+        min-height: 1150px;
+    }
+    .vacunation-details__container{
+        width: 85%;
+    }
   }
 
 

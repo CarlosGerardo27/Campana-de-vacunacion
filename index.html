@@ -28,7 +28,7 @@
                     <span class="navbar__element">Noticias</span>
                     <span class="navbar__element">Regulación</span>
                     <button class="button--main">Vacuname</button>
-                    <img  id="closeMenu" src="Assets/img/close-icon.png" alt="close-icon">
+         
             </div>
         </nav>
 
@@ -396,13 +396,10 @@
 
 
     <script>
-
+        let closeMenu = document.getElementById("closeMenu")
         let menu = document.getElementById("menu");
         let navbarMenu = document.getElementById("navbar__menu--mb");
         let navbar = document.getElementById("navbar--mb");
-
-
-
 
         menu.addEventListener("click", ()=>{
             menu.style.display = "none"
@@ -413,10 +410,22 @@
             navbarMenu.style.minheight = "350px";
             navbarMenu.style.backgroundColor = "#A8B8E9";
             navbarMenu.style.width = "100%";
-            
         })
 
+        closeMenu.addEventListener("click", cerrar)
 
+        function cerrar (){
+            navbarMenu.style.display = "none";
+            menu.style.display = "flex";
+            navbar.style.flexDirection = "row";
+            console.log("cerrar");
+        }
+
+        navbarMenu.addEventListener("click", () => {
+            navbarMenu.style.display = "none"
+            menu.style.display = "flex";
+            navbar.style.flexDirection = "row"
+        })
 
     </script>
 </body>

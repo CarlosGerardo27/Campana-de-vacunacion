@@ -105,6 +105,9 @@
 
 
 /* Navbar */
+
+
+
 .navbar{
     width: 100%;
     position: relative;
@@ -147,6 +150,49 @@
     color: #FFD012;
 }
 
+
+/* Navbar Mobile */
+
+.navbar--mb{
+    display: none;
+    width: 100%;
+    justify-content: space-evenly;
+    position: sticky;
+    padding-top: 30px;
+    padding-bottom: 20px ;
+    top: 60px;
+    align-items: center;
+    background-color: white;
+    z-index: 15;
+}
+
+#closeMenu{
+    display: none;
+    cursor: pointer;
+}
+
+.navbar__logo--mb{
+    width: 200px;
+}
+
+.navbar__menu--mb{
+    display: none;
+}
+
+.navbar__logo-container--mb{
+    margin-bottom: 20px;
+}
+
+.navbar__element--mb{
+    margin: 15px 0 15px 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    align-self: center;
+    transition: 300ms;
+}
 
 /* Hero section */
 .hero{
@@ -697,7 +743,7 @@ footer img{
 }
 
 
-/* Estilos en mobile */
+
 
   @media (max-width: 1178px) {
     section{
@@ -732,6 +778,28 @@ footer img{
 
 
   @media (max-width: 1002px) {
+    .navbar--mb{
+        display: flex;
+    }
+
+    #closeMenu{
+        display: flex;
+        position: absolute  ;
+        align-self: flex-end;
+        padding: 10 20px;
+
+    }
+    .hero{
+        margin-top: 40px;
+    }
+    .navbar{
+        display: none;
+    }
+
+/*     .hero{
+        margin-top: 70px;
+    } */
+
     .vacunation-details__container{
         width: 85%;
         bottom: 0%;
@@ -842,7 +910,6 @@ footer img{
     .contact__row{
         margin-bottom: 0px;
     }
-  }
   }
 
   @media (max-width: 600px) {

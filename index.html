@@ -22,14 +22,34 @@
             <div class="navbar__logo-container">
                 <img  class="navbar__logo" src="Assets/img/Vaccination.png" alt="vacunación">
             </div>
-            <div class="navbar__menu">
-                <span class="navbar__element">Base de datos</span>
-                <span class="navbar__element">Educación</span>
-                <span class="navbar__element">Noticias</span>
-                <span class="navbar__element">Regulación</span>
-                <button class="button--main">Vacuname</button>
+                <div class="navbar__menu">
+                    <span class="navbar__element">Base de datos</span>
+                    <span class="navbar__element">Educación</span>
+                    <span class="navbar__element">Noticias</span>
+                    <span class="navbar__element">Regulación</span>
+                    <button class="button--main">Vacuname</button>
+                    <img  id="closeMenu" src="Assets/img/close-icon.png" alt="close-icon">
             </div>
         </nav>
+
+
+        <nav class="navbar--mb" id="navbar--mb">
+            <div class="navbar__logo-container--mb">
+                <img  class="navbar__logo--mb" src="Assets/img/Vaccination.png" alt="vacunación">
+            </div>
+            <div class="menu__mobile--mb" id="menu">
+                <img src="Assets/img/menu-icon3.png" alt="mobile_menu">
+            </div>
+            <div class="navbar__menu--mb" id="navbar__menu--mb">
+                    <img  id="closeMenu" src="Assets/img/close-icon.png" alt="close-icon">
+                    <span class="navbar__element--mb">Base de datos</span>
+                    <span class="navbar__element--mb">Educación</span>
+                    <span class="navbar__element--mb">Noticias</span>
+                    <span class="navbar__element--mb">Regulación</span>
+                    <button class="button--main--mb">Vacuname</button>
+            </div>
+        </nav>
+
         <section class="hero">
             <div class="hero__left">
                 <div class="hero__triangle mobile__hide"></div>
@@ -375,12 +395,29 @@
 
 
 
-<!--     <script>
-        let colapsable = document.getElementsByClassName("collapsible__container");
+    <script>
 
-        for (let i = 0; i < colapsable)
+        let menu = document.getElementById("menu");
+        let navbarMenu = document.getElementById("navbar__menu--mb");
+        let navbar = document.getElementById("navbar--mb");
 
 
-    </script> -->
+
+
+        menu.addEventListener("click", ()=>{
+            menu.style.display = "none"
+            navbar.style.flexDirection = "column"
+            navbarMenu.style.display = "flex";
+            navbarMenu.style.flexDirection = "column";
+            navbarMenu.style.alignItems = "center"
+            navbarMenu.style.minheight = "350px";
+            navbarMenu.style.backgroundColor = "#A8B8E9";
+            navbarMenu.style.width = "100%";
+            
+        })
+
+
+
+    </script>
 </body>
 </html>

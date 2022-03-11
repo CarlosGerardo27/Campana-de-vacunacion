@@ -394,12 +394,27 @@
 
 
 
-
     <script>
         let closeMenu = document.getElementById("closeMenu")
         let menu = document.getElementById("menu");
         let navbarMenu = document.getElementById("navbar__menu--mb");
         let navbar = document.getElementById("navbar--mb");
+        let collaapsableButton = document.getElementsByClassName("colapse-element___heading");
+        let collapsableContainer = document.getElementsByClassName("collapsible__container");
+
+
+        for (i = 0; i < collaapsableButton.length; i++) {
+                collaapsableButton[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                content.style.display = "none";
+                } else {
+                content.style.display = "block";
+             }
+            });
+        }
+        
 
         menu.addEventListener("click", ()=>{
             menu.style.display = "none"
@@ -418,6 +433,7 @@
             navbarMenu.style.display = "none";
             menu.style.display = "flex";
             navbar.style.flexDirection = "row";
+            navbar.style.alignItems = "center"
             console.log("cerrar");
         }
 
@@ -426,6 +442,7 @@
             menu.style.display = "flex";
             navbar.style.flexDirection = "row"
         })
+
 
     </script>
 </body>

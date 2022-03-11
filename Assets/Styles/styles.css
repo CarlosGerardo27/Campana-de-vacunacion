@@ -103,6 +103,26 @@
     color: #3353D1;
 }
 
+.button--main--mb{
+    border: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    background-color: hsl(228, 65%, 48%);
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 3px 4px 10px #A8B8E9;
+    transition: 200ms;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button--main--mb:hover{
+    background-color: #FFD012;
+    color: #1F3E72;
+}
 
 /* Navbar */
 
@@ -158,8 +178,8 @@
     width: 100%;
     justify-content: space-evenly;
     position: sticky;
-    padding-top: 30px;
-    top: 60px;
+    padding-top: 10px;
+    top: 20px;
     align-items: center;
     background-color: white;
     z-index: 15;
@@ -180,6 +200,7 @@
 
 .navbar__logo-container--mb{
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .navbar__element--mb{
@@ -459,7 +480,7 @@
 }
 
 
-.colapse-element___heading:hover{
+.active, .colapse-element___heading:hover{
     background-color: #DDE5FF ;
 }
 
@@ -759,9 +780,10 @@ footer img{
     }
     .hero__left{
         width: 90%;
+        min-height: 650px;
     }
     .margin-top{
-        margin-top: 0;
+        margin-top: 30px;
     }
 
     .preparation__column-right{
@@ -914,9 +936,37 @@ footer img{
     .contact__row{
         margin-bottom: 0px;
     }
+
+    footer{
+        flex-direction: column;
+        width: 90%;
+    }
+    .footer__column-left{
+        margin-bottom: 40px;
+    }
+
+    .credtis{
+        margin-top: 40px;
+    }
+    .footer__column-right{
+        width: 80%;
+    }
+    .footer__menu-container{
+        z-index: 2;
+    }
   }
 
   @media (max-width: 600px) {
+    .contact__row{
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .contact__box{
+        width: 80%;
+        margin-top: 40px;
+    }
+
     .maxwidth--600{
         max-width: 500px;
     }
@@ -926,9 +976,39 @@ footer img{
     .hero__left{
         min-height: 1150px;
     }
+    .hero__title{
+        font-size: 50px;
+    }
+    .paragraph{
+        width: 100%;
+    }
+
+    .benefits__container{
+        width: 90%;
+    }
+
     .vacunation-details__container{
         width: 85%;
     }
+    .colapse-element___heading{
+        width: 100%;
+        margin: 20px 10px 20px 10px;
+        
+    }
   }
 
+  @media (max-width:500px) {
+    .hero__left{
+        min-height: 1050px;
+    }
+    .footer__menu-container{
+        flex-direction: column;
+    }
+    .menu__box{
+        margin-bottom: 40px;
+    }
+    .pharma__container{
+        margin-bottom: 0px;
+    }          
+  }
 
